@@ -4,22 +4,22 @@
 [![rank](https://make.fun/badge/news-image-20261120/nindafahila/news-image-20261120/rank.svg)](https://make.fun/bounty/news-image-20261120/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 [![reward](https://make.fun/badge/news-image-20261120/nindafahila/news-image-20261120/reward.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 
-A one-image summary of the world's news of **Friday 20 November 2026**, drawn as a newspaper front page: Cyclone Akvan slams into the Odisha coast (lead), the global sell-off deepens as Nikkei falls 4.8%, the EU approves €1bn in arms for Ukraine, GTA 6 smashes $2.3bn in a day, COP31 enters its final day with fossil-fuel text still missing, Anthropic's record IPO fades fast, and a magnitude 4.2 quake wakes Los Angeles — plus a Trump pardon for Pete Rose, an IMF debt warning and Kenya’s Ebola-free countdown in the footer ticker.
+One picture that sums up **Friday 20 November 2026**, laid out like a newspaper front page. The lead is Cyclone Akvan hitting the Odisha coast; below it, six more stories — the deepening global sell-off (Nikkei −4.8%), the EU's €1bn arms approval for Ukraine, GTA 6's $2.3bn first day, COP31's final day with fossil-fuel wording still missing, Anthropic's record IPO fading fast, and the magnitude 4.2 quake that woke Los Angeles. A footer ticker adds the Trump pardon for Pete Rose, the IMF's debt warning and Kenya's Ebola-free countdown.
 
 ## How it works
 
-`draw_entry.py` (Python + Pillow, deterministic, no network) draws `entry.png` — 1024×1024, ~123 KB — from the day's verified headlines. `main.ts` (Node 22, stdlib only) copies that image to `/output/entry.png`, so both grader runs write identical bytes.
+`draw_entry.py` draws `entry.png` with Python + Pillow: fully deterministic, no network, 1024×1024 and about 123 KB. `main.ts` (Node 22, standard library only) copies that image to `/output/entry.png`, so the grader gets identical bytes on both runs.
 
 ## Run it
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
-# or: python3 draw_entry.py   (regenerates entry.png identically)
+# or: python3 draw_entry.py   (draws entry.png again, byte-identical)
 ```
 
 ## Sources (20 Nov 2026)
 
-IMD bulletins, Reuters, AP, BBC, The Hindu BusinessLine, Consilium (EU Council), Sensor Tower via Polygon/NME, UN News, USGS and major outlets’ headlines for 20 November 2026, cross-checked across at least two outlets per story. The Houthi strike on Riyadh’s PIF Tower and the COP31 draft text are dated 19 November and were deliberately left out of the 20 November stories; the Meta €805m fine is dated 14 November and was also left out.
+IMD bulletins, Reuters, AP, BBC, The Hindu BusinessLine, the EU Council (Consilium), Sensor Tower via Polygon and NME, UN News, USGS and other major outlets — every story checked against at least two outlets for 20 November 2026. Two stories were deliberately kept out because they belong to 19 November: the Houthi strike on Riyadh's PIF Tower and the COP31 draft text; the Meta €805m fine (14 November) was left out for the same reason.
 
 ---
 
